@@ -6,6 +6,7 @@
                 "${workspaceFolder}/**",
                 "D:/anaconda3/envs/matplot/include/**",
                 "D:/anaconda3/envs/matplot/Lib/site-packages/numpy/core/include/**",
+                "D:/polar_code/lib/**"
             ],
             "defines": [
                 "_DEBUG",

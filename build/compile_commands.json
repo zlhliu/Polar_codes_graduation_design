@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/polar_code/build",
+  "command": "D:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\polar_code.dir\\polar_code.cpp.obj -c D:\\polar_code\\polar_code.cpp",
+  "file": "D:/polar_code/polar_code.cpp"
+},
+{
+  "directory": "D:/polar_code/build",
+  "command": "D:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\polar_code.dir\\lib\\encoder.cpp.obj -c D:\\polar_code\\lib\\encoder.cpp",
+  "file": "D:/polar_code/lib/encoder.cpp"
+}
+]

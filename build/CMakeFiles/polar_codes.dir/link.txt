@@ -1,0 +1,3 @@
+D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E rm -f CMakeFiles\polar_codes.dir/objects.a
+D:\msys64\mingw64\bin\ar.exe qc CMakeFiles\polar_codes.dir/objects.a @CMakeFiles\polar_codes.dir\objects1.rsp
+D:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\polar_codes.dir/objects.a -Wl,--no-whole-archive -o polar_codes.exe -Wl,--out-implib,libpolar_codes.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\polar_codes.dir\linklibs.rsp

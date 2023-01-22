@@ -5,14 +5,13 @@
 class encoder
 {
 private:
-    std::vector<int>_Q;
     std::vector<int> _data;
     std::vector<int> _code;
     int _N; // number of information bits
     int _K; // number of code
-    void code_calculate();
+    void code_calculate(const std::vector<int>& Q);
 public:
-    encoder(const std::vector<int> data,int K,int N);
+    encoder(std::vector<int>&& data,int K,int N,const std::vector<int>& Q);
     ~encoder();
     std::vector<int> code_output();
 };

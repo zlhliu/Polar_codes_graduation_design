@@ -8,5 +8,15 @@
   "directory": "D:/polar_code/build",
   "command": "D:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\polar_code.dir\\lib\\encoder.cpp.obj -c D:\\polar_code\\lib\\encoder.cpp",
   "file": "D:/polar_code/lib/encoder.cpp"
+},
+{
+  "directory": "D:/polar_code/build",
+  "command": "D:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\polar_code.dir\\lib\\decoder.cpp.obj -c D:\\polar_code\\lib\\decoder.cpp",
+  "file": "D:/polar_code/lib/decoder.cpp"
+},
+{
+  "directory": "D:/polar_code/build",
+  "command": "D:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\polar_code.dir\\lib\\demodulation.cpp.obj -c D:\\polar_code\\lib\\demodulation.cpp",
+  "file": "D:/polar_code/lib/demodulation.cpp"
 }
 ]

@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/polar_code.dir/lib/decoder.cpp.obj"
+  "CMakeFiles/polar_code.dir/lib/decoder.cpp.obj.d"
+  "CMakeFiles/polar_code.dir/lib/demodulation.cpp.obj"
+  "CMakeFiles/polar_code.dir/lib/demodulation.cpp.obj.d"
   "CMakeFiles/polar_code.dir/lib/encoder.cpp.obj"
   "CMakeFiles/polar_code.dir/lib/encoder.cpp.obj.d"
   "CMakeFiles/polar_code.dir/polar_code.cpp.obj"

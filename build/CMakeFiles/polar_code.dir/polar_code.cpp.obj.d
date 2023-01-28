@@ -320,4 +320,5 @@ CMakeFiles/polar_code.dir/polar_code.cpp.obj: \
  D:/msys64/mingw64/include/c++/11.2.0/bits/enable_special_members.h \
  D:/msys64/mingw64/include/c++/11.2.0/memory_resource \
  D:/msys64/mingw64/include/c++/11.2.0/bits/uses_allocator_args.h \
- D:/msys64/mingw64/include/c++/11.2.0/variant D:\polar_code\lib/encoder.h
+ D:/msys64/mingw64/include/c++/11.2.0/variant D:\polar_code\lib/encoder.h \
+ D:\polar_code\lib/demodulation.h D:\polar_code\lib/decoder.h

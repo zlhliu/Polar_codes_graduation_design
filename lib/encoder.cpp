@@ -1,7 +1,7 @@
 #include"encoder.hpp"
 
 // rate:K/N,K=_data.size(),N=_code.size()
-encoder::encoder(std::vector<int>&& data,int K,int N,const std::vector<int>& Q){
+encoder::encoder(const std::vector<int>& data,int K,int N,const std::vector<int>& Q){
     _data=data;
     _K=K;
     _N=N;
@@ -11,8 +11,7 @@ encoder::~encoder(){
 }
 
 void encoder::code_calculate(const std::vector<int>& Q){
-    std::vector<int> temp(_N,0);
-    _code=std::move(temp); // set frozen bits
+    _code=std::vector<int>(_N,0); // set frozen bits
     for(size_t i=0;i<_K;i++){ // set inf bits
         _code[Q[i+_N-_K]]=_data[i];
     }

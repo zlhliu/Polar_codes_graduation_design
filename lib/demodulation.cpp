@@ -1,6 +1,6 @@
 #include"demodulation.hpp"
 
-demodulation::demodulation(std::vector<std::complex<double>>&& message_through_awgn,double noise_power){
+demodulation::demodulation(const std::vector<std::complex<double>>& message_through_awgn,double noise_power){
     _message_through_awgn=message_through_awgn;
     _likelyhood_value=std::vector<double>(_message_through_awgn.size()*2);
     // 

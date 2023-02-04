@@ -1,5 +1,5 @@
 CMakeFiles/polar_code.dir/lib/decoder.cpp.obj: \
- D:\polar_code\lib\decoder.cpp D:\polar_code\lib\decoder.h \
+ D:\polar_code\lib\decoder.cpp D:\polar_code\lib\decoder.hpp \
  D:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/stdc++.h \
  D:/msys64/mingw64/include/c++/11.2.0/cassert \
  D:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h \

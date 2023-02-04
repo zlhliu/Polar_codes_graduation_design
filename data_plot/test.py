@@ -5,7 +5,7 @@ with open(file) as f:
     global l
     l = list(num)
     for x in range(len(l)):
-        if l[x] == ' ':
+        if l[x] == '	':
             l[x] = ','
 s=''.join(l);
 with open(file,'w') as f:

@@ -11,7 +11,7 @@ private:
     int _K; // number of code
     void code_calculate(const std::vector<int>& Q);
 public:
-    encoder(std::vector<int>&& data,int K,int N,const std::vector<int>& Q);
+    encoder(const std::vector<int>& data,int K,int N,const std::vector<int>& Q);
     ~encoder();
     std::vector<int> code_output();
 };

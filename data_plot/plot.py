@@ -6,7 +6,7 @@ import matplotlib.font_manager as mpt
 
 chinese_font=mpt.FontProperties(fname=r'C:/Windows/Fonts/msyh.ttc') #显示中文字体
 #导入数据
-file = 'data/data.txt'
+file = 'data_plot/data.txt'
 a = np.loadtxt(file)
 # 数组切片
 x = a[:,0]  # 取第一列数据
@@ -23,5 +23,5 @@ plt.xlabel('距离(cm)', fontproperties=chinese_font) #注意后面的字体属�
 plt.ylabel('%')
 plt.title('管线仪实测剖面图', fontproperties=chinese_font)  
 # 保存图片  
-plt.savefig('data/out.jpg')
+plt.savefig('data_plot/out.jpg')
 plt.show()

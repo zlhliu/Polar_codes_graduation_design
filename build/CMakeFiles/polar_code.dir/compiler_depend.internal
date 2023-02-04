@@ -3,7 +3,7 @@
 
 CMakeFiles/polar_code.dir/lib/decoder.cpp.obj
  D:/polar_code/lib/decoder.cpp
- D:/polar_code/lib/decoder.h
+ D:/polar_code/lib/decoder.hpp
  D:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/stdc++.h
  D:/msys64/mingw64/include/c++/11.2.0/cassert
  D:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h
@@ -332,7 +332,7 @@ CMakeFiles/polar_code.dir/lib/decoder.cpp.obj
 
 CMakeFiles/polar_code.dir/lib/demodulation.cpp.obj
  D:/polar_code/lib/demodulation.cpp
- D:/polar_code/lib/demodulation.h
+ D:/polar_code/lib/demodulation.hpp
  D:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/stdc++.h
  D:/msys64/mingw64/include/c++/11.2.0/cassert
  D:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h
@@ -661,7 +661,7 @@ CMakeFiles/polar_code.dir/lib/demodulation.cpp.obj
 
 CMakeFiles/polar_code.dir/lib/encoder.cpp.obj
  D:/polar_code/lib/encoder.cpp
- D:/polar_code/lib/encoder.h
+ D:/polar_code/lib/encoder.hpp
  D:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/stdc++.h
  D:/msys64/mingw64/include/c++/11.2.0/cassert
  D:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h
@@ -1315,7 +1315,7 @@ CMakeFiles/polar_code.dir/polar_code.cpp.obj
  D:/msys64/mingw64/include/c++/11.2.0/memory_resource
  D:/msys64/mingw64/include/c++/11.2.0/bits/uses_allocator_args.h
  D:/msys64/mingw64/include/c++/11.2.0/variant
- D:/polar_code/lib/encoder.h
- D:/polar_code/lib/demodulation.h
- D:/polar_code/lib/decoder.h
+ D:/polar_code/lib/encoder.hpp
+ D:/polar_code/lib/demodulation.hpp
+ D:/polar_code/lib/decoder.hpp
 

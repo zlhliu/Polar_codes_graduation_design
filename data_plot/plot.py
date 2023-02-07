@@ -9,19 +9,34 @@ chinese_font=mpt.FontProperties(fname=r'C:/Windows/Fonts/msyh.ttc') #显示中�
 file = 'data_plot/data.txt'
 a = np.loadtxt(file)
 # 数组切片
-x = a[:,0]  # 取第一列数据
-y = a[:,1]  # 取第二列数据
-# 进行样条插值
-tck = interpolate.splrep(x,y)
-xx = np.linspace(min(x),max(x),100)
-yy = interpolate.splev(xx,tck,der=0)
-print(xx)
+x1 = a[:int(len(a)/2),0]  # 取第一列数据
+y1 = a[:int(len(a)/2),1]  # 取第二列数据
+
+x2 = a[int(len(a)/2):,0]  # 取第一列数据
+y2 = a[int(len(a)/2):,1]  # 取第二列数据
+# # 进行样条插值
+# tck = interpolate.splrep(x1,y1)
+# xx = np.linspace(min(x1),max(x1),100)
+# yy = interpolate.splev(xx,tck,der=0)
+# print(xx)
+# plt.plot(x1,y1,'0',xx,yy)
 # 画图
-plt.plot(x,y,'o',xx,yy)
+plt.figure(1)
+plt.subplot()
+plt.plot(x1,y1)
+# plt.savefig('data_plot/out1.jpg')
+
+
+# tck = interpolate.splrep(x2,y2)
+# xx = np.linspace(min(x2),max(x2),100)
+# yy = interpolate.splev(xx,tck,der=0)
+# print(xx)
+
+plt.plot(x2,y2)
 plt.legend(['true','Cubic-Spline'])
-plt.xlabel('距离(cm)', fontproperties=chinese_font) #注意后面的字体属性
+plt.xlabel('信噪比(snr)', fontproperties=chinese_font) #注意后面的字体属性
 plt.ylabel('%')
-plt.title('管线仪实测剖面图', fontproperties=chinese_font)  
+plt.title('SC译码器的BER-FER', fontproperties=chinese_font)  
 # 保存图片  
 plt.savefig('data_plot/out.jpg')
 plt.show()

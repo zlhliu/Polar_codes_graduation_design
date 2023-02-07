@@ -14,8 +14,10 @@ private:
     void sc_calculate(const std::unordered_set<int>& frozen_channe);
 public:
     std::vector<int> result(const std::vector<int>& Q);
-    decoder(const std::vector<double>& likely_value,const std::unordered_set<int>& frozen_channe,const std::vector<int>& Q,std::string decoder_type);
+    decoder(const std::vector<double>& likely_value,const std::unordered_set<int>& frozen_channel,std::string decoder_type);
+    decoder();
     ~decoder();
+    void start_calculation(const std::vector<double>& likely_value,const std::unordered_set<int>& frozen_channel,std::string decoder_type);
 };
 
 

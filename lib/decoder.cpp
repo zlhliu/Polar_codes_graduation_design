@@ -17,7 +17,7 @@ inline double g(double x,double y,int z){
 }
 
 // TODO:不要用&&
-decoder::decoder(const std::vector<double>& likely_value,const std::unordered_set<int>& frozen_channel,const std::vector<int>& Q,std::string decoder_type)
+decoder::decoder(const std::vector<double>& likely_value,const std::unordered_set<int>& frozen_channel,std::string decoder_type)
 {  
     _likelyhood_value=std::vector<std::vector<double>>(log2(total_bits)+1,std::vector<double>(total_bits));
     for (size_t i = 0; i < likely_value.size(); i++)
@@ -25,6 +25,18 @@ decoder::decoder(const std::vector<double>& likely_value,const std::unordered_se
         _likelyhood_value[0][i]=likely_value[i];
     }
     _code=std::vector<std::vector<int>>(log2(total_bits)+1,std::vector<int>(total_bits));
+    _message=std::vector<int>(likely_value.size());
+    sc_calculate(frozen_channel);
+}
+decoder::decoder(){
+    _code=std::vector<std::vector<int>>(log2(total_bits)+1,std::vector<int>(total_bits));
+}
+void decoder::start_calculation(const std::vector<double>& likely_value,const std::unordered_set<int>& frozen_channel,std::string decoder_type){
+    _likelyhood_value=std::vector<std::vector<double>>(log2(total_bits)+1,std::vector<double>(total_bits));
+    for (size_t i = 0; i < likely_value.size(); i++)
+    {
+        _likelyhood_value[0][i]=likely_value[i];
+    }
     _message=std::vector<int>(likely_value.size());
     sc_calculate(frozen_channel);
 }

@@ -52,10 +52,17 @@ RM = D:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = D:\polar_code
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = D:\polar_code\build
+=======
+CMAKE_SOURCE_DIR = D:\fast_polar_codes
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = D:\fast_polar_codes\build
+>>>>>>> 936f85f (累了，先这样吧)
 
 # Include any dependencies generated for this target.
 include CMakeFiles/polar_code.dir/depend.make
@@ -69,6 +76,7 @@ include CMakeFiles/polar_code.dir/progress.make
 include CMakeFiles/polar_code.dir/flags.make
 
 CMakeFiles/polar_code.dir/polar_code.cpp.obj: CMakeFiles/polar_code.dir/flags.make
+<<<<<<< HEAD
 CMakeFiles/polar_code.dir/polar_code.cpp.obj: D:/polar_code/polar_code.cpp
 CMakeFiles/polar_code.dir/polar_code.cpp.obj: CMakeFiles/polar_code.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\polar_code\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/polar_code.dir/polar_code.cpp.obj"
@@ -123,6 +131,62 @@ CMakeFiles/polar_code.dir/lib/demodulation.cpp.i: cmake_force
 CMakeFiles/polar_code.dir/lib/demodulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/polar_code.dir/lib/demodulation.cpp.s"
 	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\polar_code\lib\demodulation.cpp -o CMakeFiles\polar_code.dir\lib\demodulation.cpp.s
+=======
+CMakeFiles/polar_code.dir/polar_code.cpp.obj: D:/fast_polar_codes/polar_code.cpp
+CMakeFiles/polar_code.dir/polar_code.cpp.obj: CMakeFiles/polar_code.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\fast_polar_codes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/polar_code.dir/polar_code.cpp.obj"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/polar_code.dir/polar_code.cpp.obj -MF CMakeFiles\polar_code.dir\polar_code.cpp.obj.d -o CMakeFiles\polar_code.dir\polar_code.cpp.obj -c D:\fast_polar_codes\polar_code.cpp
+
+CMakeFiles/polar_code.dir/polar_code.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/polar_code.dir/polar_code.cpp.i"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\fast_polar_codes\polar_code.cpp > CMakeFiles\polar_code.dir\polar_code.cpp.i
+
+CMakeFiles/polar_code.dir/polar_code.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/polar_code.dir/polar_code.cpp.s"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\fast_polar_codes\polar_code.cpp -o CMakeFiles\polar_code.dir\polar_code.cpp.s
+
+CMakeFiles/polar_code.dir/lib/encoder.cpp.obj: CMakeFiles/polar_code.dir/flags.make
+CMakeFiles/polar_code.dir/lib/encoder.cpp.obj: D:/fast_polar_codes/lib/encoder.cpp
+CMakeFiles/polar_code.dir/lib/encoder.cpp.obj: CMakeFiles/polar_code.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\fast_polar_codes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/polar_code.dir/lib/encoder.cpp.obj"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/polar_code.dir/lib/encoder.cpp.obj -MF CMakeFiles\polar_code.dir\lib\encoder.cpp.obj.d -o CMakeFiles\polar_code.dir\lib\encoder.cpp.obj -c D:\fast_polar_codes\lib\encoder.cpp
+
+CMakeFiles/polar_code.dir/lib/encoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/polar_code.dir/lib/encoder.cpp.i"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\fast_polar_codes\lib\encoder.cpp > CMakeFiles\polar_code.dir\lib\encoder.cpp.i
+
+CMakeFiles/polar_code.dir/lib/encoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/polar_code.dir/lib/encoder.cpp.s"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\fast_polar_codes\lib\encoder.cpp -o CMakeFiles\polar_code.dir\lib\encoder.cpp.s
+
+CMakeFiles/polar_code.dir/lib/decoder.cpp.obj: CMakeFiles/polar_code.dir/flags.make
+CMakeFiles/polar_code.dir/lib/decoder.cpp.obj: D:/fast_polar_codes/lib/decoder.cpp
+CMakeFiles/polar_code.dir/lib/decoder.cpp.obj: CMakeFiles/polar_code.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\fast_polar_codes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/polar_code.dir/lib/decoder.cpp.obj"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/polar_code.dir/lib/decoder.cpp.obj -MF CMakeFiles\polar_code.dir\lib\decoder.cpp.obj.d -o CMakeFiles\polar_code.dir\lib\decoder.cpp.obj -c D:\fast_polar_codes\lib\decoder.cpp
+
+CMakeFiles/polar_code.dir/lib/decoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/polar_code.dir/lib/decoder.cpp.i"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\fast_polar_codes\lib\decoder.cpp > CMakeFiles\polar_code.dir\lib\decoder.cpp.i
+
+CMakeFiles/polar_code.dir/lib/decoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/polar_code.dir/lib/decoder.cpp.s"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\fast_polar_codes\lib\decoder.cpp -o CMakeFiles\polar_code.dir\lib\decoder.cpp.s
+
+CMakeFiles/polar_code.dir/lib/demodulation.cpp.obj: CMakeFiles/polar_code.dir/flags.make
+CMakeFiles/polar_code.dir/lib/demodulation.cpp.obj: D:/fast_polar_codes/lib/demodulation.cpp
+CMakeFiles/polar_code.dir/lib/demodulation.cpp.obj: CMakeFiles/polar_code.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\fast_polar_codes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/polar_code.dir/lib/demodulation.cpp.obj"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/polar_code.dir/lib/demodulation.cpp.obj -MF CMakeFiles\polar_code.dir\lib\demodulation.cpp.obj.d -o CMakeFiles\polar_code.dir\lib\demodulation.cpp.obj -c D:\fast_polar_codes\lib\demodulation.cpp
+
+CMakeFiles/polar_code.dir/lib/demodulation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/polar_code.dir/lib/demodulation.cpp.i"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\fast_polar_codes\lib\demodulation.cpp > CMakeFiles\polar_code.dir\lib\demodulation.cpp.i
+
+CMakeFiles/polar_code.dir/lib/demodulation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/polar_code.dir/lib/demodulation.cpp.s"
+	D:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\fast_polar_codes\lib\demodulation.cpp -o CMakeFiles\polar_code.dir\lib\demodulation.cpp.s
+>>>>>>> 936f85f (累了，先这样吧)
 
 # Object files for target polar_code
 polar_code_OBJECTS = \
@@ -142,7 +206,11 @@ polar_code.exe: CMakeFiles/polar_code.dir/build.make
 polar_code.exe: CMakeFiles/polar_code.dir/linkLibs.rsp
 polar_code.exe: CMakeFiles/polar_code.dir/objects1
 polar_code.exe: CMakeFiles/polar_code.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\polar_code\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable polar_code.exe"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\fast_polar_codes\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable polar_code.exe"
+>>>>>>> 936f85f (累了，先这样吧)
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\polar_code.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +222,10 @@ CMakeFiles/polar_code.dir/clean:
 .PHONY : CMakeFiles/polar_code.dir/clean
 
 CMakeFiles/polar_code.dir/depend:
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\polar_code D:\polar_code D:\polar_code\build D:\polar_code\build D:\polar_code\build\CMakeFiles\polar_code.dir\DependInfo.cmake --color=$(COLOR)
+=======
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\fast_polar_codes D:\fast_polar_codes D:\fast_polar_codes\build D:\fast_polar_codes\build D:\fast_polar_codes\build\CMakeFiles\polar_code.dir\DependInfo.cmake --color=$(COLOR)
+>>>>>>> 936f85f (累了，先这样吧)
 .PHONY : CMakeFiles/polar_code.dir/depend
 

@@ -14,7 +14,11 @@ public:
     encoder(const std::vector<int>& data,int K,int N,const std::vector<int>& Q);
     void start_calculation(const std::vector<int>& data,int K,int N,const std::vector<int>& Q);
     ~encoder();
+<<<<<<< HEAD
     std::vector<int> code_output();
+=======
+    std::vector<int> code_output()const;
+>>>>>>> 936f85f (累了，先这样吧)
 };
 
 

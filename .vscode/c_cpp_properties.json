@@ -4,9 +4,13 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
+<<<<<<< HEAD
                 "D:/anaconda3/envs/matplot/include/**",
                 "D:/anaconda3/envs/matplot/Lib/site-packages/numpy/core/include/**",
                 "D:/polar_code/lib/**"
+=======
+                "${vcpkgRoot}/x64-windows/include"
+>>>>>>> 936f85f (累了，先这样吧)
             ],
             "defines": [
                 "_DEBUG",
@@ -14,10 +18,17 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.19041.0",
+<<<<<<< HEAD
             "compilerPath": "D:\\msys64\\mingw64\\bin\\g++.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-gcc-x64",
+=======
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64",
+>>>>>>> 936f85f (累了，先这样吧)
             "compileCommands": "${workspaceFolder}/build/compile_commands.json",
             "configurationProvider": "ms-vscode.cmake-tools"
         }

@@ -1,5 +1,9 @@
 CMakeFiles/polar_code.dir/polar_code.cpp.obj: \
+<<<<<<< HEAD
  D:\polar_code\polar_code.cpp \
+=======
+ D:\fast_polar_codes\polar_code.cpp \
+>>>>>>> 936f85f (累了，先这样吧)
  D:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/stdc++.h \
  D:/msys64/mingw64/include/c++/11.2.0/cassert \
  D:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -321,5 +325,11 @@ CMakeFiles/polar_code.dir/polar_code.cpp.obj: \
  D:/msys64/mingw64/include/c++/11.2.0/memory_resource \
  D:/msys64/mingw64/include/c++/11.2.0/bits/uses_allocator_args.h \
  D:/msys64/mingw64/include/c++/11.2.0/variant \
+<<<<<<< HEAD
  D:\polar_code\lib/encoder.hpp D:\polar_code\lib/demodulation.hpp \
  D:\polar_code\lib/decoder.hpp
+=======
+ D:\fast_polar_codes\lib/encoder.hpp \
+ D:\fast_polar_codes\lib/demodulation.hpp \
+ D:\fast_polar_codes\lib/decoder.hpp
+>>>>>>> 936f85f (累了，先这样吧)

@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 D:/polar_code/build/CMakeFiles/polar_code.dir
 D:/polar_code/build/CMakeFiles/edit_cache.dir
 D:/polar_code/build/CMakeFiles/rebuild_cache.dir
+=======
+D:/fast_polar_codes/build/CMakeFiles/polar_code.dir
+D:/fast_polar_codes/build/CMakeFiles/edit_cache.dir
+D:/fast_polar_codes/build/CMakeFiles/rebuild_cache.dir
+>>>>>>> 936f85f (累了，先这样吧)

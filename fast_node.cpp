@@ -2,6 +2,7 @@
 
 typedef struct fast_node_state
 {
+    fast_node_state():state(4){}
     int state;
     int num;
 }fast_node_state;
@@ -20,10 +21,10 @@ int main(){
     int end=0;   // 节点可能的结尾index
     int num=0;   // 节点内所含有的位数,必须为2的指数
 
-    std::vector<std::vector<fast_node_state>> node_state(10); // 
-    for (size_t i = 0; i < 10; i++){
-        node_state[9-i].reserve(pow(2,10-i));
-        node_state[9-i].resize(pow(2,10-i));
+    std::vector<std::vector<fast_node_state>> node_state(11); // 
+    for (size_t i = 0; i < 11; i++){
+        node_state[10-i].reserve(pow(2,10-i));
+        node_state[10-i].resize(pow(2,10-i));
     }
     
     std::function<bool(double)> is_index_of_two=[&](double num){
@@ -49,8 +50,8 @@ int main(){
                 if(is_index_of_two(num)){
                     end=i;
                 }
-                node_state[9][end].state=1; // 只能是全1节点
-                node_state[9][end].num=end-pre+1;
+                node_state[10][end].state=1; // 只能是全1节点
+                node_state[10][end].num=end-pre+1;
                 if(end>800)
                     std::cout<<"stop";
                 i=end; // 节点所含的必须是2的指数倍，所以i要回end+1
@@ -62,8 +63,8 @@ int main(){
                 if(is_index_of_two(num)){ // 此0111……节点刚好为2的指数倍,可以作为快速节点
                     end=i;
                 }
-                node_state[9][end].state=3; // 记录为0111……节点
-                node_state[9][end].num=end-pre+1;
+                node_state[10][end].state=3; // 记录为0111……节点
+                node_state[10][end].num=end-pre+1;
                 i=end;
                 pre=i+1,end=pre;
                 num=0;
@@ -81,16 +82,16 @@ int main(){
                         state=3;
                     }
                     else{
-                        node_state[9][end].state=2;
-                        node_state[9][end].num=end-pre+1;
+                        node_state[10][end].state=2;
+                        node_state[10][end].num=end-pre+1;
                         // 此时i==end
                         pre=i+1,end=pre;
                         num=0;
                     }
                 }
                 else{ // 为0000……节点
-                    node_state[9][end].state=0;
-                    node_state[9][end].num=end-pre+1;
+                    node_state[10][end].state=0;
+                    node_state[10][end].num=end-pre+1;
                     i=end;
                     pre=i+1,end=pre;
                     num=0;
@@ -105,8 +106,8 @@ int main(){
                 // 所以要提前处理
                 if(i==1023){
                     // 到达结尾，会导致最后的若干个信道没有处理
-                    node_state[9][end].state=1;
-                    node_state[9][end].num=end-pre+1;
+                    node_state[10][end].state=1;
+                    node_state[10][end].num=end-pre+1;
                     i=end;
                     pre=i+1,end=pre;
                     num=0;
@@ -118,8 +119,8 @@ int main(){
                     end=i;
                 }
                 // 此节点可能是0111……节点的结尾
-                node_state[9][end].state=3;
-                node_state[9][end].num=end-pre+1;
+                node_state[10][end].state=3;
+                node_state[10][end].num=end-pre+1;
                 // if(end==927)
                 //     std::cout<<"stop";
                 // i=end;
@@ -131,18 +132,25 @@ int main(){
 
 
     // TODO:往上判断所有节点类型
-    for(size_t i=1023;i>=0;i--){
-        auto num=node_state[9][i].num;
-        auto state=node_state[9][i].state;
-        int layer=9;
+    // 为什么不用size_t呢,这是因为会出奇怪的问题,目前不知道为啥
+    int i=1023;
+    while(i>=0){
+        auto num=node_state[10][i].num;
+        auto state=node_state[10][i].state;
+        int layer=10;
         int index=i;
+        i-=node_state[10][i].num;
         while (num>1&&layer>=0){
             node_state[layer-1][index/2].num=num/2;
             node_state[layer-1][index/2].state=node_state[layer][index].state;
             num/=2;index/=2;layer--;
         }
+        std::cout<<state;
     }
 
+
+
+    // 验证
     std::cout<<"stop";
     return 0;
 }

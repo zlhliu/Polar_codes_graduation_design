@@ -151,6 +151,16 @@ int main(){
 
 
     // 验证
+    auto temp = node_state;
+    bool done=false;
+    int i=0;
+    while(!done){
+        int layer=0;
+        int cur=0;
+        if(temp[layer][cur].state==4){ // 普通节点
+            
+        }
+    }
     std::cout<<"stop";
     return 0;
 }

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Install script for directory: D:/polar_code
-=======
 # Install script for directory: D:/fast_polar_codes
->>>>>>> 936f85f (累了，先这样吧)
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,9 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< HEAD
-file(WRITE "D:/polar_code/build/${CMAKE_INSTALL_MANIFEST}"
-=======
 file(WRITE "D:/fast_polar_codes/build/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> 936f85f (累了，先这样吧)
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,10 +6,6 @@
 #define total_bits 1024
 encoder::encoder(){
     _code=std::vector<int>(total_bits); // set frozen bits
-<<<<<<< HEAD
-    int a=0;
-=======
->>>>>>> 936f85f (累了，先这样吧)
 }
 encoder::encoder(const std::vector<int>& data,int K,int N,const std::vector<int>& Q){
     _N=N;
@@ -48,11 +44,7 @@ void encoder::code_calculate(const std::vector<int>& Q,const std::vector<int>& d
     }
 }
 
-<<<<<<< HEAD
-std::vector<int> encoder::code_output(){
-=======
 std::vector<int> encoder::code_output()const{
->>>>>>> 936f85f (累了，先这样吧)
     return _code;
 }
 

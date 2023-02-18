@@ -149,8 +149,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/polar_code/build",
-		"source" : "D:/polar_code"
+		"build" : "D:/fast_polar_codes/build",
+		"source" : "D:/fast_polar_codes"
 	},
 	"version" : 
 	{

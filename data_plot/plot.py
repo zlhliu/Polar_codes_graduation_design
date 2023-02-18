@@ -1,6 +1,6 @@
 # code:utf-8  	Ubuntu
 import matplotlib.pyplot as plt
-from scipy import interpolate
+# from scipy import interpolate
 import numpy as np
 import matplotlib.font_manager as mpt
 
@@ -33,7 +33,7 @@ plt.plot(x1,y1)
 # print(xx)
 
 plt.plot(x2,y2)
-plt.legend(['true','Cubic-Spline'])
+plt.legend(['BER','FER'])
 plt.xlabel('信噪比(snr)', fontproperties=chinese_font) #注意后面的字体属性
 plt.ylabel('%')
 plt.title('SC译码器的BER-FER', fontproperties=chinese_font)  

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "polar_code.exe"
+			"path" : "======polar_code.exe"
 		},
 		{
-			"path" : "polar_code.pdb"
+			"path" : "======polar_code.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -72,7 +72,7 @@
 		"language" : "CXX"
 	},
 	"name" : "polar_code",
-	"nameOnDisk" : "polar_code.exe",
+	"nameOnDisk" : "======polar_code.exe",
 	"paths" : 
 	{
 		"build" : ".",

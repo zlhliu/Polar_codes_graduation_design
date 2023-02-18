@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "======polar_code.exe"
+  "======polar_code.exe.manifest"
+  "======polar_code.pdb"
   "CMakeFiles/polar_code.dir/lib/decoder.cpp.obj"
   "CMakeFiles/polar_code.dir/lib/decoder.cpp.obj.d"
   "CMakeFiles/polar_code.dir/lib/demodulation.cpp.obj"
@@ -8,9 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/polar_code.dir/polar_code.cpp.obj"
   "CMakeFiles/polar_code.dir/polar_code.cpp.obj.d"
   "libpolar_code.dll.a"
-  "polar_code.exe"
-  "polar_code.exe.manifest"
-  "polar_code.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

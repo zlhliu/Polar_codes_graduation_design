@@ -75,7 +75,7 @@ int main() {
     std::vector<int> message(info_bits);
 
     // error rate
-    int frame_num=20;
+    int frame_num=100;
     std::vector<double> FER(snr_num); // error frame rate
     std::vector<double> BER(snr_num); // error bits rate
     std::vector<double> BER_hard_decode(snr_num); // without polar codes

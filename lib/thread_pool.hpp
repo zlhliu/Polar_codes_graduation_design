@@ -63,14 +63,16 @@ template<class F, class... Args>
 auto ThreadPool::enqueue(F&& f, Args&&... args) 
     -> std::future<typename std::result_of<F(Args...)>::type>
 {
+    // 将参数和函数打包成一个任务
     using return_type = typename std::result_of<F(Args...)>::type;
-
     auto task = std::make_shared< std::packaged_task<return_type()> >(
             std::bind(std::forward<F>(f), std::forward<Args>(args)...)
         );
     
+    
     std::future<return_type> res = task->get_future();
     {
+        // tasks一次只能加入一个task
         std::unique_lock<std::mutex> lock(queue_mutex);
 
         // don't allow enqueueing after stopping the pool
@@ -79,6 +81,7 @@ auto ThreadPool::enqueue(F&& f, Args&&... args)
 
         tasks.emplace([task](){ (*task)(); });
     }
+    // 解除一个锁后，提醒condition的wait有一个锁解锁了
     condition.notify_one();
     return res;
 }

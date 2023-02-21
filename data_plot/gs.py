@@ -16,6 +16,7 @@ for item in range(10000):
 for key,value in z.items():
     x[key+5]=value
 plt.plot(y,x)
+
 plt.savefig('data_plot/out.jpg')
 
 plt.show()

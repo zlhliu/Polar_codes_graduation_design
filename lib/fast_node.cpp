@@ -10,7 +10,7 @@ std::vector<std::vector<fast_node_state>> calculate_fast_node(){
     for (size_t i = 0; i < 1024/2; i++){
         channel[Q[i]]=0;
     }
-
+    
     int state=0; // 4个节点,0:全0,1:全1,2:000…1,3:0111…
     int pre=0;   // 节点的起始index
     int end=0;   // 节点可能的结尾index
@@ -67,7 +67,6 @@ std::vector<std::vector<fast_node_state>> calculate_fast_node(){
 
         }
         else if(channel[i]==1){
-
             if(num==1)state=R1;
 
             if(state==0){ // 全0遇到1,新节点可能为000……1节点,可能时0000……节点,也可能是0111……节点
